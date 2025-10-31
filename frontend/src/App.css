@@ -1,0 +1,163 @@
+/* 
+LANDING PAGE STYLING
+*/
+.landingPageContainer {
+  width: 100vw;
+  height: 100vh;
+  background: url("/public/background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: rgb(221, 240, 255);
+  font-family: "Poppins", sans-serif;
+}
+
+.landingPageContainer nav {
+  padding-inline: 1.2rem;
+  padding-block: 1.6rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.landingPageContainer nav h2 {
+  font-size: 1.8rem;
+  font-weight: 500;
+}
+
+.landingPageContainer .navlist {
+  display: flex;
+  gap: 1.6rem;
+  cursor: pointer;
+}
+
+.landingMainContainer {
+  display: flex;
+  justify-content: space-between;
+  padding-inline: 3rem;
+  height: 80vh;
+  align-items: center;
+}
+
+.landingMainContainer > div:nth-child(1) {
+  font-size: 1.6rem;
+  max-width: 50%;
+}
+
+.landingMainContainer > div:nth-child(1) div[role='button'] {
+  background-color: rgb(236, 132, 40);
+  width: fit-content;
+  margin-top: 1.5rem;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  transition: 0.3s;
+}
+
+.landingMainContainer > div:nth-child(1) div[role='button']:hover {
+  background-color: rgb(255, 150, 60);
+  transform: scale(1.05);
+}
+
+.landingMainContainer > div:nth-child(1) div[role='button'] a {
+  text-decoration: none;
+  color: rgb(78, 3, 3);
+  font-size: 1.3rem;
+}
+
+.landingMainContainer > div:nth-child(2) img {
+  height: 70vh;
+  width: auto;
+}
+
+/* HOME PAGE STYLING */
+
+
+.navBar {
+  width: 100%;
+  padding: 1rem 2rem;
+  background: rgb(211, 143, 100);
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.navBar h2 {
+  font-weight: 500;
+  font-size: 1.8rem;
+}
+
+.navBar p {
+  margin-left: 0.3rem;
+  color: #ddd;
+  font-size: 1rem;
+}
+
+.meetContainer {
+  height: calc(100vh - 80px);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgb(211, 86, 44);
+  padding: 3rem;
+  color: #fff;
+  overflow: hidden;
+}
+
+.leftPanel {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1.2rem;
+  font-size: 1.6rem;
+  padding: 2rem;
+}
+
+.leftPanel h2 {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.rightPanel {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.rightPanel img {
+  width: 80%;
+  height: auto;
+  border-radius: 10px;
+  animation: float 4s ease-in-out infinite;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-15px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+/* Responsive tweaks */
+@media (max-width: 768px) {
+  .landingMainContainer,
+  .meetContainer {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .rightPanel img {
+    width: 60%;
+    margin-top: 2rem;
+  }
+}
+
+/* Authentication */
