@@ -19,9 +19,8 @@ Built to deliver a seamless and secure communication experience using WebRTC and
 - [Project Structure](#project-structure)
 - [Configuration](#configuration)
 - [Future Enhancements](#future-enhancements)
-- [Contributing](#contributing)
 - [License](#license)
-- [Acknowledgements](#acknowledgements)
+
 
 ---
 
